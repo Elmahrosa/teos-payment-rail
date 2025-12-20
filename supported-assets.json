@@ -1,0 +1,10 @@
+{
+  "primary_asset": {
+    "name": "FIRST PI MISR BANK",
+    "symbol": "TEOS",
+    "chain": "Solana",
+    "mint": "AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo",
+    "decimals": 9
+  },
+  "secondary_assets": []
+}
