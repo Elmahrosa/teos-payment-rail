@@ -27,6 +27,35 @@ It is **NOT** a public payment network.
 
 ---
 
+
+---
+
+## 📁 Directory Structure
+
+This repository follows a **specification-first, compliance-oriented structure**
+to support audits, regulatory review, and controlled implementation.
+
+TEOS-Payment-Rail/
+├── README.md
+├── LICENSE
+├── rail/
+│ ├── rail-spec.md # Core technical specification of the payment rail
+│ ├── supported-assets.json # Supported tokens and metadata
+│ └── settlement-model.md # On-chain settlement model
+├── compliance/
+│ ├── regulatory-scope.md # Regulatory framework and jurisdictional scope
+│ └── prohibited-uses.md # Explicitly disallowed activities
+├── docs/
+│ ├── architecture.md # High-level system architecture
+│ └── glossary.md # Terminology and definitions
+└── VERSION # Specification version identifier
+
+
+
+
+---
+
+
 ## 🧱 Core Principles
 
 - **No custody of user funds**: Users retain control of their private keys at all times.
