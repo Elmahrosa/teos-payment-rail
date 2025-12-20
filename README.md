@@ -7,7 +7,7 @@ Maintained by **Elmahrosa International**
 
 ## 🎯 Purpose
 
-TEOS Payment Rail defines a **non-custodial, on-chain settlement framework**
+TEOS Payment Rail defines a **non-custodial, on-chain settlement framework**  
 for value transfer using the $TEOS token.
 
 This repository is **specification-first**, not a live payment service.
@@ -23,27 +23,27 @@ This rail is designed for:
 - Closed-loop institutional systems
 - Government & academic evaluation
 
-It is NOT a public payment network.
+It is **NOT** a public payment network.
 
 ---
 
 ## 🧱 Core Principles
 
-- No custody of user funds
-- No minting or inflation
-- No hidden fees
-- On-chain verifiability
-- Compliance-first design
+- **No custody of user funds**: Users retain control of their private keys at all times.
+- **No minting or inflation**: The $TEOS token supply is fixed and governed by its mint parameters.
+- **No hidden fees**: All transaction costs are transparent and documented.
+- **On-chain verifiability**: All operations are recorded on the Solana blockchain for auditability.
+- **Compliance-first design**: Built with regulatory frameworks as a foundational constraint.
 
 ---
 
 ## 🪙 Supported Token
 
-- **Token:** TEOS
-- **Chain:** Solana
-- **Mint:** AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo
-- **Mint Authority:** Revoked
-- **Freeze Authority:** Revoked
+- **Token:** TEOS  
+- **Chain:** Solana  
+- **Mint:** `AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo`  
+- **Mint Authority:** Revoked  
+- **Freeze Authority:** Revoked  
 
 ---
 
@@ -51,11 +51,11 @@ It is NOT a public payment network.
 
 This repository does NOT:
 
-- Provide payment services
-- Act as a bank, PSP, or wallet
-- Enable merchant onboarding
-- Handle fiat conversion
-- Bypass financial regulation
+- Provide payment services  
+- Act as a bank, PSP, or wallet  
+- Enable merchant onboarding  
+- Handle fiat conversion  
+- Bypass financial regulation  
 
 Implementation requires **explicit written authorization**.
 
@@ -65,6 +65,59 @@ Implementation requires **explicit written authorization**.
 
 PolyForm Noncommercial License 1.0.0  
 See [LICENSE](./LICENSE)
+
+---
+
+## 🧾 Versioning
+
+The `VERSION` file tracks the current specification version.  
+Example format:
+
+
+1.0.0
+
+---
+
+## 📚 Documentation
+
+### 📄 `rail-spec.md`
+Core technical specification for the TEOS Payment Rail, including:
+- Settlement protocols
+- Smart contract logic
+- On-chain validation rules
+
+### 📄 `supported-assets.json`
+JSON file listing all supported tokens and their parameters (e.g., mint addresses, decimals, compliance tags).
+
+### 📄 `settlement-model.md`
+Detailed breakdown of the on-chain settlement process, including:
+- Transaction lifecycle
+- Atomic swaps
+- Finality guarantees
+
+### 📄 `regulatory-scope.md`
+Explanation of the regulatory frameworks governing this rail, including:
+- Jurisdictional compliance
+- KYC/AML integration points
+- Reporting requirements
+
+### 📄 `prohibited-uses.md`
+List of activities explicitly disallowed by the rail, such as:
+- Custodial operations
+- Unregulated cross-border transfers
+- Token minting or freezing without authorization
+
+### 📄 `architecture.md`
+High-level overview of the system architecture, including:
+- Layer 1 blockchain integration
+- Off-chain coordination layers
+- On-chain verification mechanisms
+
+### 📄 `glossary.md`
+Definitions of key terms for clarity, such as:
+- **Non-custodial**: Users retain ownership of funds at all times
+- **Settlement**: Final transfer of value on-chain
+- **Rail**: Infrastructure for structured, compliant value transfers
 
 ---
 
