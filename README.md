@@ -14,6 +14,29 @@ This repository is **specification-first**, not a live payment service.
 
 ---
 
+## 📁 Directory Structure
+
+The project is organized as follows:
+
+```
+TEOS-Payment-Rail/
+├── README.md
+├── LICENSE
+├── rail/
+│   ├── rail-spec.md           # Core technical specification of the payment rail
+│   ├── supported-assets.json  # List of supported tokens and their metadata
+│   └── settlement-model.md    # Detailed description of the settlement process
+├── compliance/
+│   ├── regulatory-scope.md    # Regulatory framework and scope of operation
+│   └── prohibited-uses.md     # List of activities explicitly disallowed by the rail
+├── docs/
+│   ├── architecture.md        # High-level system architecture
+│   └── glossary.md            # Definitions of key terms and acronyms
+└── VERSION                    # Current version of the specification
+```
+
+---
+
 ## 🔹 Scope
 
 This rail is designed for:
@@ -26,35 +49,6 @@ This rail is designed for:
 It is **NOT** a public payment network.
 
 ---
-
-
----
-
-## 📁 Directory Structure
-
-This repository follows a **specification-first, compliance-oriented structure**
-to support audits, regulatory review, and controlled implementation.
-
-TEOS-Payment-Rail/
-├── README.md
-├── LICENSE
-├── rail/
-│ ├── rail-spec.md # Core technical specification of the payment rail
-│ ├── supported-assets.json # Supported tokens and metadata
-│ └── settlement-model.md # On-chain settlement model
-├── compliance/
-│ ├── regulatory-scope.md # Regulatory framework and jurisdictional scope
-│ └── prohibited-uses.md # Explicitly disallowed activities
-├── docs/
-│ ├── architecture.md # High-level system architecture
-│ └── glossary.md # Terminology and definitions
-└── VERSION # Specification version identifier
-
-
-
-
----
-
 
 ## 🧱 Core Principles
 
@@ -102,8 +96,9 @@ See [LICENSE](./LICENSE)
 The `VERSION` file tracks the current specification version.  
 Example format:
 
-
+```
 1.0.0
+```
 
 ---
 
@@ -116,7 +111,22 @@ Core technical specification for the TEOS Payment Rail, including:
 - On-chain validation rules
 
 ### 📄 `supported-assets.json`
-JSON file listing all supported tokens and their parameters (e.g., mint addresses, decimals, compliance tags).
+JSON file listing all supported tokens and their parameters (e.g., mint addresses, decimals, compliance tags).  
+Example format:
+```json
+{
+  "tokens": [
+    {
+      "name": "TEOS",
+      "symbol": "TEOS",
+      "chain": "Solana",
+      "mint": "AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo",
+      "decimals": 9,
+      "compliance_tags": ["regulated", "non-custodial"]
+    }
+  ]
+}
+```
 
 ### 📄 `settlement-model.md`
 Detailed breakdown of the on-chain settlement process, including:
@@ -151,3 +161,6 @@ Definitions of key terms for clarity, such as:
 ---
 
 © Elmahrosa International — Sovereign Financial Infrastructure
+```
+
+---
