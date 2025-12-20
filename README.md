@@ -1,4 +1,3 @@
-# TEOS-Payment-Rail
 # TEOS Payment Rail
 
 Sovereign payment rail specification for $TEOS  
